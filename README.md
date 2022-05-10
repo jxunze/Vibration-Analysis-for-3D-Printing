@@ -12,7 +12,7 @@ The following schematic shows the schematic of the interior of an EOS M290 print
   <img
   src="./Photos/EOS M290.jpeg"
   alt="EOS M290 printer.">
-  <figcaption>Front of EOS M290 printer</figcaption>
+    <figcaption align = "center">Front of EOS M290 printer</figcaption>
 </figure>
 
 ![EOS M290 printer](<./Photos/EOS M290.jpeg>)
