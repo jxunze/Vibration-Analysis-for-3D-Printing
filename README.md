@@ -17,7 +17,7 @@ The following schematic shows the schematic of the interior of an EOS M290 print
 ![Interior of EOS M290 printer](<./Photos/M290 interior.png>)
 <figcaption align = "center">Picture of EOS M290 chamber</figcaption>
 
-###Project Introduction
+### Project Introduction
 Without the proper support structures in place, the printed metal can experience stress, causing the print to warp. When the recoater arm sweeps across the build plate to apply the next layer of metal powder, it may scrape against these warped parts that jut out of the layer, causing streaking in the newly applied layer (the new layer will not be applied evenly).
 As such, there will be many problems with the print. In the worst case, the protrusions in the layers may even jam the recoater arm, causing the print to stop.
 
@@ -25,36 +25,37 @@ Therefore, we can tell how successful a print is by the amount of warping the pa
 
 In the project, I attempted to use the vibrations experienced by the recoater arm as a metric to map out the parts of the print that has experienced warping visually.
 
-###Set-up of Print Chamber 
+### Set-up of Print Chamber 
 
 To record the vibrations that the recoater arm experiences, I planned to attach an accelerometer to the recoater arm and allowed it to record while the print was ongoing. However, due to the space constrains within the print chamber, the power and data storage must be wired in externally.
 As the chamber needed to be filled with Nitrogen gas for the print (to prevent any combustion), the chamber must be airtight, so I had to think of a solution to feed power toand data out of the accelerator during the print.
 To tackle this problem statement, I replaced one of the plugs that was situated on the top of the print chamber with a Printed Ciruit Board (PCB) mounted on a custom-made metal mount, which allowed electrical signals to go through, but not any exchanges of gas.
 
-![Plug in print chamber](<./Photos/Plug.jpg>)
+![Plug in print chamber](<./Photos/Plug.png>)
 <figcaption align = "center">Plug in the print chamber</figcaption>
 
-![PCB in print chamber](<./Photos/PCB.jpg>)
+![PCB in print chamber](<./Photos/PCB.png>)
 <figcaption align = "center">Plug in the print chamber was replaced by a PCB mounted on a custom metal holder</figcaption>
 
 To mount the accelerometer on the recoater arm, I designed a plastic mount which was then 3D printed. It could clamp on a ledge of the recoater arm, and allowed me to mount sensors within a hole in the recoater arm.
 
-![Mount](<./Photos/Mount.jpg>)
+![Mount](<./Photos/Mount.png>)
 <figcaption align = "center">Mount was specially designed and printed within the allowable limits in the print chamber. There were some issues when printing the mount which led to its uneven surface. Despite that, the mount worked fine so there was no need to reprint one.</figcaption>
 
 The sensors in the chamber could thus be fed to the PCB using a coiled cable. The parts in the print chamber were then secured in place and that they were not blocking the laser. A laptop was connected to the PCB from the outside, which allowed for supply of power and data storage. The whole set-up is then allowed to run while the print was ongoing.
 
-![Recoater arm on the extreme left of the chamber](<./Photos/Arm on left.jpg>)
+![Recoater arm on the extreme left of the chamber](<./Photos/Arm on left.png>)
 <figcaption align = "center">Recoater arm on the extreme left of the chamber. The components were secured so that they would not drop out in the middle of the print or are obstructing the laser.</figcaption>
 
-![Recoater arm on the extreme right of the chamber](<./Photos/Arm on right.jpg>)
+![Recoater arm on the extreme right of the chamber](<./Photos/Arm on right.png>)
 <figcaption align = "center">Recoater arm on extreme right of the chamber</figcaption>
 
 ### Results
 
 The .stl file of the print job can b e viewed at [Overhang.stl](<./Photos/Overhang.stl>).
 
-![CAD file used for the print](./Photos/CAD_file.png)
+![CAD file used for the print](<./Photos/CAD_file.png>)
+{{< caption >}}CAD file used for the print{{< /caption >}}
 <figcaption align = "center">CAD file used for the print</figcaption>
 
 
@@ -98,7 +99,7 @@ The 2D CAD photo was scaled accordingly, and then superimposed on the heatmap, c
 ![Final image](<./Photos/Final image.png>)
 <figcaption align = "center">Final image</figcaption>
 
-###Conclusion
+### Conclusion
 This project serves as a proof of concept that it is possible to see the areas affected by distortion and warping through reading the vibrations experienced by the recoater arm. During the print, it was observed that the module with the steepest overhand experienced a slight warping, which is translated into the vibration data. This shows that this method of visualising warping is sensitive and feasible.
 
 However, in the final image that was generated, the regions of higher vibrations did not seem to match with the exact position of the module. Reasons for this offset is discussed later.
