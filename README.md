@@ -8,6 +8,13 @@ support structures to the parts, which can either hold the part in place, or act
 A thin layer of metal powder is deposited on the print job. A laser beam is then exposed onto the layer, fusing the metal powder with the previous layers.
 The following schematic shows the schematic of the interior of an EOS M290 printer.
 
+<figure>
+  <img
+  src="./Photos/EOS M290.jpeg"
+  alt="EOS M290 printer.">
+  <figcaption>Front of EOS M290 printer</figcaption>
+</figure>
+
 ![EOS M290 printer](<./Photos/EOS M290.jpeg>)
 <figcaption align = "center">Front of EOS M290 printer</figcaption>
 
