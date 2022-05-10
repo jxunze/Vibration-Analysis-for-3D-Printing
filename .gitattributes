@@ -1,0 +1,4 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+putty_arduino.csv filter=lfs diff=lfs merge=lfs -text
+df.npy filter=lfs diff=lfs merge=lfs -text
+read_image.csv filter=lfs diff=lfs merge=lfs -text
