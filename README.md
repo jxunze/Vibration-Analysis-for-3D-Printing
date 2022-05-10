@@ -54,8 +54,7 @@ The sensors in the chamber could thus be connected to the PCB using a coiled cab
 
 The .stl file of the print job can be viewed at [Overhang.stl](<./Photos/Overhang.stl>).
 
-![CAD file used for the print](<./Photos/CAD_file.png>)  
-{{< caption >}}CAD file used for the print{{< /caption >}}
+![CAD file used for the print](<./Photos/CAD_file.png>)
 *CAD file used for the print*  
 
 
